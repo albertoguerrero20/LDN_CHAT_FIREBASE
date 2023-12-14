@@ -1,0 +1,92 @@
+:root {
+    font-size: 14px;
+    --color-principal: #E38E00;
+    --color-contraste: #0071e3;
+    --color-texto-contraste: #86868b;
+    --color-texto-oscuro: #1d1d1f;
+    --color-texto-claro: #ecf3fd;
+    --color-claro: #f5f5f7;
+    --color-fondo-oscuro: #000;
+    --color-oscuro: #101010;
+    --color-blanco: #fff;
+    --gap-grid: 20px;
+    --radius-bento: 18px;
+    --bezier:cubic-bezier(0.77,0,0.18,1);
+}
+
+.chat-header{
+    margin-top:80px;
+    padding: 24px;
+}
+
+#form-message{
+    display: flex;
+    gap: 63px;
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 80vh;
+    box-sizing: border-box;
+    padding: 24px;
+}
+
+form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#message-sender{
+    border-radius: var(--radius-bento);
+    border: none;
+    background-color:var(--color-texto-claro);
+    box-sizing: border-box;
+    padding: 4px 18px;
+    height: 40px;
+}
+
+
+#message-text{
+    border-radius: var(--radius-bento);
+    border: none;
+    background-color:var(--color-texto-claro);
+    box-sizing: border-box;
+    padding: 12px 18px;
+}
+
+#sent-messages{
+    margin-top: 24px;
+    width: 100%;
+}
+
+.btn-submit{
+    margin-top: 20px;
+    width: 120px;
+    height: 50px;
+    background-color: var(--color-contraste);
+    color: var(--color-blanco);
+}
+.btn-submit:hover{
+    background-color: #0071e3;
+}
+
+.register{
+    padding: 24px;
+}
+
+span{
+    font-size: 1.4rem;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+label{
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+#label2{
+    margin-top: 20px;
+}

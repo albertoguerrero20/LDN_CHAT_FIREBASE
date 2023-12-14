@@ -1,0 +1,87 @@
+main {
+  background-color: white;
+  margin-top: 140px;
+}
+
+main section {
+  margin-top: 140px;
+  padding: 32px 16px;
+}
+
+main h1 {
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.register {
+  margin-top: 140px;
+  padding: 32px 16px;
+}
+
+#error-name {
+  color: red;
+  display: none;
+}
+
+#error-model {
+  color: red;
+  display: none;
+}
+
+#error-select {
+  color: red;
+  display: none;
+}
+
+#error-material {
+  color: red;
+  display: none;
+}
+
+#header-section {
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: "stack";
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#header-section img {
+  top: 0;
+  left: 0;
+  position: relative;
+  grid-area: stack;
+  width: 100%;
+  z-index: 0;
+}
+
+.left{
+  margin: 0 0 12px 12px;
+  font-size: 1rem;
+}
+
+section p{
+  margin-top: 12px;
+  width: 80%;
+}
+
+@media only screen and (width >= 540px) {
+  #header-section {
+    width: 80vw;
+    overflow: visible;
+  }
+  section p{
+    width: 57%;
+  }
+}
+
+@media only screen and (width >= 992px) {
+  #header-section {
+    width: 700px;
+  }
+  section p{
+    width: 38%;
+  }
+}

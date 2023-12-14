@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrintPon</title>
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- principal stylesheet  -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/form.css">
+
+</head>
+
+<body>
+  <header id="header">
+    <div class="header-content container">
+      <a class="logo" href="../index.html">
+        <div id="logo-img"></div>
+        <strong class="header-link">PrintPont</strong>
+      </a>
+      <nav id="nav">
+        <i id="close-icon" class="fa-solid fa-xmark"></i>
+        <ul class="list-menu">
+          <li><a href="../index.html"><span class="header-link">Inicio</span></a></li>
+          <li><a href="form.html"><span class="header-link">Registro</span></a></li>
+          <li><a href="printer.html"><span class="header-link">Impresoras</span></a></li>
+          <li><a href="chat.html"><span class="header-link">Preguntas</span></a></li>
+        </ul>
+        <div class="sing">
+          <a class="btn-log btn box-shadow" href="#">Log In</a>
+        </div>
+      </nav>
+      <i id="nav-menu" class="fa-solid fa-bars"></i>
+    </div>
+  </header>
+  <main>
+    <div class="register">
+      <h1>Registro de Impresoras</h1>
+      <div id="header-section">
+        <img src="../img/parallax-3.webp" alt="imagen 3d print" id="printer">
+        <img src="../img/parallax-4.webp" alt="imagen plane" id="air-balloon">
+        <img src="../img/parallax-1.webp" alt="imagen cloud" id="cloud">
+      </div>
+
+      <section class="container">
+        <h2>Lista de impresoras</h2>
+        <p>Este es el registro para modificar las impresoras y sus características, la lista de estas mismas se
+          encuentra
+          en el apartado de impresoras del header.</p>
+        <div class="row">
+          <form action="formulario.html" class="form-object col-md-6" id="form" method="get">
+
+            <div class="mb-3 mt-5">
+              <label for="object-name" class="form-label">Marca</label>
+              <input type="text" class="form-control" id="object-name">
+              <span id="error-name">** Error en la marca **</span>
+            </div>
+
+            <div class="mb-3">
+              <label for="printer-model" class="form-label">Modelo de impresora</label>
+              <input type="text" class="form-control" id="printer-model">
+              <span id="error-model">** Error en el modelo **</span>
+            </div>
+
+            <div class="mb-3">
+              <label for="printer-type" class="form-label">Tipo de impresora</label>
+              <select id="printer-type" class="form-select" aria-label="select example">
+                <option value="">Selecciona</option>
+                <option value="FDM">FDM</option>
+                <option value="SLA">SLA</option>
+                <option value="DLP">DLP</option>
+              </select>
+              <span id="error-select">** Seleccionar el tipo de impresora **</span>
+            </div>
+
+            <div class="mb-3">
+              <label for="printer-material" class="form-label">Tipo de material</label>
+              <select id="printer-material" class="form-select" aria-label="select example">
+                <option value="">Selecciona</option>
+                <option value="PLA">PLA</option>
+                <option value="PETG">PETG</option>
+                <option value="NILON">NILON</option>
+                <option value="ABS">ABS</option>
+                <option value="RESINA">RESINA</option>
+              </select>
+              <span id="error-material">** Seleccionar un tipo de material **</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-2" id="form-submit">Enviar</button>
+          </form>
+
+          <div class="col-md-6 mt-5">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Modelo</th>
+                  <th>Tipo</th>
+                  <th>Material</th>
+                  <th>Acción</th>
+                </tr>
+              </thead>
+              <tbody id="printer-table"></tbody>
+            </table>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="container footer-center">
+      <div class="footer-contain">
+        <ul class="footer-content ">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="form.html">Registro</a></li>
+          <li><a href="printer.html">Impresoras</a></li>
+          <li><a href="#">Preguntas</a></li>
+        </ul>
+        <span>Los derechos reservados a la página</span>
+        <ul class="social-media">
+          <li><a href="#"><i class="fa-brands fa-x-twitter"></i> </a></li>
+          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+        </ul>
+        <p>Las Palmas de Gran Canaria, España</p>
+      </div>
+      <div class="extra">
+        <details>
+          <summary>Correos de contacto</summary>
+          <p>Pintpont@info.com</p>
+          <p>Pintpont-info2@info.com</p>
+          <p>Pintpont-info3@info.com</p>
+        </details>
+        <details>
+          <summary>¿Qué es la impresión 3d?</summary>
+          <p>Es un proceso de impresión tridimensional que</p>
+          <p>crea un objeto real a partir de un archivo digital.</p>
+        </details>
+        <details>
+          <summary>¿Cómo recibo propinas?</summary>
+          <p>Deberá vincular su cuenta de PayPal a su cuenta.</p>
+          <p>Recibirá el pago a en PayPal al comienzo de cada mes.</p>
+        </details>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FontAwesome Script -->
+  <script src="https://kit.fontawesome.com/2ac04cec1e.js" crossorigin="anonymous"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- principal script  -->
+  <script src="../js/nav-menu.js"></script>
+  <script src="../js/validation.js"></script>
+  <script src="../js/crud.js"></script>
+  <script src="../js/parallax.js"></script>
+</body>
+
+</html>
