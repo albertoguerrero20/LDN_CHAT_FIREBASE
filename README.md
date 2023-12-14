@@ -1,13 +1,7 @@
-# LDN_UT2_Task_3
+# LDN_UT2_Task_Chat_and_Firebase
+The activity involves expanding the previous project by adding a chat and using Firebase to host the project.
 
-Task 3 involves the use of HTML, CSS, JavaScript and Boostrap.
-
-In this project, I have created HTML and CSS documents based on an image from Dribbble.
-A new page with 'bootstrap 5' was added, containing a form and its respective validation.
-
-I was inspired by the [Angular](www.angular.dev) website to create the 'parallax' effect at the beginning of the page. I also took reference from various pages, including [Apple](https://www.apple.com/es/airpods/), for the overall page design.
-
-Other webside [Awwwards](https://www.awwwards.com/websites/).
+The activity is located in the "Preguntas" header section; that's where the text chat is located.
 ## Getting Started
 
 Read the following instructions to download and view the documents.
